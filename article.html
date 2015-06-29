@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="content-type" content="text/html">
+    <meta name="description" content="Опис">
+    <meta name="keywords" content="Ключові слова">
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <title>Стаття</title>
+</head>
+<body>
+<div id="content">
+    <div id="header">
+        <h2>Header</h2>
+    </div>
+</div>
+<hr />
+<div id="main_content">
+    <div id="left">
+        <h2>Меню</h2>
+        <ul>
+            <li><a href="#">Головна</a></li>
+        </ul>
+        <ul>
+            <li><a href="#">Лінійні дані</a></li>
+        </ul>
+        <ul>
+            <li><a href="#">Математичні функції</a></li>
+        </ul>
+        <ul>
+            <li><a href="#">Функції дати і часу</a></li>
+        </ul>
+        <h2>Вхід на сайт</h2>
+        <p class="message">Невірне ім'я користувача і/або пароль</p>
+        <form name="auth" action="#" method="post">
+            <table>
+                <tr>
+                    <td>Логін</td>
+                    <td>
+                        <input type="text" name="login">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Пароль</td>
+                    <td>
+                        <input type="password" name="Password">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="right">
+                        <input type="submit" name="auth" value="Ввійти">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="right">
+                        <a href="#">Реєстрація</a>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <div id="right">
+        <form name="search" action="#" method="get">
+            <p>
+                Пошук: <input type="text" name="words">
+            </p>
+            <p>
+                <input type="submit" name="search" value="Пошук">
+            </p>
+        </form>
+        <h2>Реклама</h2>
+        <div class="banner"><a href="#"><img src="image/world.jpg"></a></div>
+        <div class="banner"><a href="#"><img src="image/First.png"></a></div>
+    </div>
+    <div id="center">
+
+        <div class="article">
+            <h1>Заголовок статті</h1>
+            <img src="image/Build.jpg">
+            <p>Текст статті</p>
+            <p>Текст статті</p>
+            <p>Текст статті</p>
+            <p>Текст статті</p>
+            <p>Текст статті</p>
+            <p>
+                <span>26.05.2015 15:05</span>
+            </p>
+            <div class="comments">
+                <h2>Коментарі</h2>
+                <div class="comments_section">
+                        <div class="gravatar">
+                            <img src="image/images.png" width="60" alt="author" />
+                        </div>
+                        <div class="comment_text">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dictum ornare nulla ac laoreet. Phasellus mattis tellus eu risusLorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dictum ornare nulla ac laoreet.</p>
+                            <div class="btn_com"><a href="#">Відповісти</a></div>
+                            <div class="comment_author">Thomas<span class="date">November 7th, 2015</span><span class="time"> 1:29 pm</span></div>
+                        </div>
+                        <div class="cleaner"></div>
+                </div>
+                <div class="comments_section">
+                    <div class="gravatar">
+                        <img src="image/images.png" width="60" alt="author" />
+                    </div>
+                    <div class="comment_text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dictum ornare nulla ac laoreet. Phasellus mattis tellus eu risusLorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dictum ornare nulla ac laoreet.</p>
+                        <div class="btn_com"><a href="#">Відповісти</a></div>
+                        <div class="comment_author">Thomas<span class="date">November 7th, 2015</span><span class="time"> 1:29 pm</span></div>
+                    </div>
+                    <div class="cleaner"></div>
+                </div>
+            </div>
+            <div id="comment_form">
+                <h2>Залишити коментар</h2>
+                <form action="functions.php" method="get">
+
+                    <table>
+                        <tr>
+                            <td>
+                                <textarea cols="86" rows="10" name="comment"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="submit" name="comm" value="Відправити">
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+
+    </div>
+    <div class="clear"></div>
+    <hr />
+    <div id="footer">
+        <p>Всі права захищенні &copy; 2015</p>
+    </div>
+</div>
+</body>
+</html>

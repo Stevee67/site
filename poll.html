@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="content-type" content="text/html">
+    <meta name="description" content="Опис">
+    <meta name="keywords" content="Ключові слова">
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <title>Головна сторінка сайту</title>
+</head>
+<body>
+<div id="content">
+    <div id="header">
+        <h2>My first website</h2>
+    </div>
+</div>
+<hr />
+<div id="main_content">
+    <div id="left">
+        <h2>Меню</h2>
+        <ul>
+            <li><a href="#">Головна</a></li>
+        </ul>
+        <ul>
+            <li><a href="#">Лінійні дані</a></li>
+        </ul>
+        <ul>
+            <li><a href="#">Математичні функції</a></li>
+        </ul>
+        <ul>
+            <li><a href="#">Функції дати і часу</a></li>
+        </ul>
+        <h2>Вхід на сайт</h2>
+        <p class="message">Невірне ім'я користувача і/або пароль</p>
+        <form name="auth" action="#" method="post">
+            <table>
+                <tr>
+                    <td>Логін</td>
+                    <td>
+                        <input type="text" name="login">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Пароль</td>
+                    <td>
+                        <input type="password" name="Password">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="right">
+                        <input type="submit" name="auth" value="Ввійти">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="right">
+                        <a href="#">Реєстрація</a>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <div id="right">
+        <form name="search" action="#" method="get">
+            <p>
+                Пошук: <input type="text" name="words">
+            </p>
+            <p>
+                <input type="submit" name="search" value="Пошук">
+            </p>
+        </form>
+        <h2>Реклама</h2>
+        <div class="banner"><a href="#"><img src="image/world.jpg"></a></div>
+        <div class="banner"><a href="#"><img src="image/First.png"></a></div>
+
+        <div class="poll">
+            <h2>Чи важка у вивченні мова програмування PHP ?</h2>
+            <form name = "poll" action="functions.php" method="post">
+                <table>
+                    <tr>
+                        <td>
+                            <input type="radio" name="variant" value="1">
+                        </td>
+                        <td>Так</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="radio" name="variant" value="2">
+                        </td>
+                        <td>Ні</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="radio" name="variant" value="3">
+                        </td>
+                        <td>Не дуже</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="submit" name="poll" value="Голосувати">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+    <div id="center">
+       <h1>Результати голосування</h1>
+        <table id ="poll">
+            <tr>
+                <td><b>Так:</b></td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td colspan="2"><hr></td>
+            </tr>
+            <tr>
+                <td><b>Ні:</b></td>
+                <td>25</td>
+            </tr>
+            <tr>
+                <td colspan="2"><hr></td>
+            </tr>
+            <tr>
+                <td><b>Не дуже:</b></td>
+                <td>158</td>
+            </tr>
+            <tr>
+                <td colspan="2"><hr></td>
+            </tr>
+        </table>
+    </div>
+    <div class="clear"></div>
+    <hr />
+    <div id="footer">
+        <p>Всі права захищенні &copy; 2015</p>
+    </div>
+</div>
+</body>
+</html>

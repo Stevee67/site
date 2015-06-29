@@ -1,0 +1,291 @@
+body{
+    margin: 0;
+    padding: 0;
+
+}
+body ol{
+    color:bisque;
+}
+body h1{
+    color: #DBC8A2;
+}
+body p{
+    margin: 10px 0;
+    color: #948048;
+    padding:0 2px 0 2px;
+    text-indent: 2em;
+    line-height: 25px;
+}
+body h2{
+    color: #696047;
+}
+body table td{
+    color: #846205;
+}
+body a{
+    color: #8E8900;
+}
+body a:hover{
+    color: #B7B100;
+}
+body img{
+    max-width: 300px;
+    padding: 10px;
+}
+.article img{
+    margin: 10px 10px;
+}
+.article p span{
+}
+.banner{
+    border: 1px solid #fff;
+    margin: 10px auto 10px;
+    width: 200px;
+    height: 200px;
+    color: #696047;
+}
+.banner img{
+    padding: 0;
+    max-width: 200px;
+    max-height: 200px;
+}
+.btn_com{
+    position: inherit;
+    float: right;
+}
+
+.clear{
+    clear: both;
+}
+#create{
+    margin-left: 30%;
+    margin-top: 40px;
+}
+.createarticle h3{
+    text-align: center;
+    color: #846205;
+}
+.editmenu{
+    margin-left: 10px;
+    margin-top: 40px;
+}
+.editsection{
+    margin-left: 10px;
+    margin-top: 40px;
+}
+.editarticle{
+    margin-left: 10px;
+    margin-top: 40px;
+}
+.editarticle input[type='text']{
+    width: 250px;
+}
+#footer{
+    min-height: 80px;
+    text-align: center;
+}
+#footer p{
+    font-size: 18px;
+    margin: 0;
+    padding-top: 30px;
+}
+.gravatar{
+    float: left;
+    margin: 0;
+    padding: 0px;
+}
+.gravatar img{
+    margin: 5px 20px 5px 5px;
+    padding: 2px;
+}
+hr{
+    margin: 0;
+}
+#header h2{
+    text-align: center;
+    margin: 0;
+    padding-top: 30px;
+    color: #C5B490;
+    font-size: 30px;
+}
+
+#content{
+    min-height: 100px;
+    margin: 0;
+    padding: 0;
+    background: url(../image/header.png);
+}
+
+#center{
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+    margin: 0 250px;
+    padding: 0 10px;
+}
+#center h1{
+    margin: 0;
+    text-align: center;
+}
+.comments_section {
+    min-height: 60px;
+    background-color: black;
+    max-width: 75%;
+    padding-bottom: 25px;
+    margin: 10px;
+    border: 1px solid #ffffff;
+}
+.comments_section p{
+    line-height: 20px;
+    text-align: justify;
+}
+.comments h2{
+    margin: 0 0 20px 5px;
+}
+.comment_text{
+    padding: 0 10px 0 0;
+    margin-top: 0;
+}
+.comment_text p{
+    padding: 0 5px;
+    margin: 0 5px 5px;
+}
+
+.comment_author{
+    margin: 2px 10px 2px 0px;
+    padding: 5px 10px 10px 0;
+    color: #846205;
+}
+#comment_form {
+    margin: 15px 5px;
+}
+#comment_form textarea {
+    color: #948048;
+    background-color: black;
+
+}
+#comment_form input[type=submit]{
+
+}
+#comment_form h2{
+    text-align: left;
+}
+.changemenu{
+    margin-left: 35%;
+}
+.changesection{
+    margin-left: 35%;
+}
+.createsection{
+
+    margin-left: 10px;
+    margin-top: 40px;
+}
+#left, #right{
+    min-height: 300px;
+    padding: 0 10px;
+    width: 230px;
+}
+#left{
+    border-right: 1px solid #fff;
+    float: left;
+}
+#left .message{
+    color: #f00
+    !important;
+    text-align: center;
+}
+#left li{
+    padding: 5px 0;
+}
+
+#main_content{
+    background: url(../image/back.png);
+}
+
+.message{
+    color: #f00;
+    text-align: center;
+}
+#message{
+    text-align: center;
+}
+.right{
+    text-align: right;
+}
+#right{
+    border-left: 1px solid #fff;
+    float: right;
+}
+#right form {
+    padding: 15px 0;
+}
+#right input[type=submit]{
+    float: left;
+}
+#right h2{
+    text-align: center;
+}
+#right p{
+    text-align: left;
+}
+#rec table{
+    margin: 0 auto;
+}
+#reg table{
+    margin: 0 auto;
+}
+#right .message{
+    color: #f00 !important;
+    text-align: center;
+}
+
+#pagination p{
+    font-size: 100%;
+    margin: 0;
+    text-align: center;
+}
+#pagination a{
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+#pagination a:active{
+    color: chartreuse;
+}
+
+#poll{
+    margin: auto;
+}
+#poll tr{
+    line-height:25px;
+}
+.poll form {
+    margin-left: 20px;
+    padding-top: 0;
+}
+.poll form input[type=submit]{
+    margin-top: 10px;
+    margin-left: 5px;
+}
+.poll h2 {
+    margin-bottom: 0;
+}
+
+/*Responsive*/
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    #comment_form textarea {
+        width: 78%;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px){
+    #comment_form textarea {
+        width: 82%;
+    }
+}
+@media (min-width: 479px) and (max-width: 767px){
+    #comment_form textarea {
+        width: 84%;
+    }
+}
