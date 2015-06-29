@@ -148,6 +148,21 @@ class Manage{
         else return $this->returnPageMessage("EDIT_ARTICLEERR", $this->config->address."?view=message");
 
     }
+    public function editcomment(){
+        if(!$_SESSION["login"] === $this->user->getLoginOnId("1")) return false;
+        $id = $_POST["hash"];
+        $comment = $_POST["comment"];
+        if($comment == ""){
+            $this->comments->delete($id);
+            return $this->returnPageMessage("DELL_COMMENT", $this->config->address."?view=message");
+        }
+       else{
+            $result = $this->comments->editComment($id, $comment);
+           if(!$result) return $this->returnMessage("ERR_EDITCOMMENT", $this->config->address."?view=commentarticle&id="."$id");
+           else return $this->returnPageMessage("EDIT_COMMENTSUCC", $this->config->address."?view=message");
+       }
+
+    }
     public function createsection(){
         if(!$_SESSION["login"] === $this->user->getLoginOnId("1")) return false;
         $id = $_POST["newid"];

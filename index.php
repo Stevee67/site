@@ -22,6 +22,9 @@
     require_once "lib/editarticlecontent_class.php";
     require_once "lib/createarticlecontent_class.php";
     require_once "lib/changecommentcontent_class.php";
+    require_once "lib/changecommentarticlecontent_class.php";
+    require_once "lib/changepollcontent_class.php";
+    require_once "lib/createpollcontent_class.php";
 
     $db = new DataBase();
     $view = $_GET["view"];
@@ -56,6 +59,9 @@
         case "changecomm":
             $content = new ChangeCommentContent($db);
             break;
+        case "commentarticle":
+            $content = new ChangeCommentArticleContent($db);
+            break;
         case "deletemenu":
             $content = new DeleteMenuContent($db);
             break;
@@ -82,6 +88,12 @@
             break;
         case "poll":
             $content = new PollContent($db);
+            break;
+        case "changepoll":
+            $content = new ChangePollContent($db);
+            break;
+        case "createpoll":
+            $content = new CreatePollContent($db);
             break;
         case "notfound":
             $content = new NotFoundContent($db);

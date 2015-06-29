@@ -43,6 +43,9 @@
     elseif($_POST["comm"]){
         $r = $manage->comment();
     }
+    elseif($_POST["editcomment"]){
+        $r = $manage->editcomment();
+    }
 
     else exit;
     $manage->redirect($r);

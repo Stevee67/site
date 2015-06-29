@@ -18,6 +18,15 @@ class Comment extends GlobalClass{
         return $this->getAllOnField("id_article", $id);
     }
 
+    public function editComment($id, $comment){
+        $this->valid->validComment($comment);
+        return $this->edit($id, array("comment"=>$comment));
+    }
+
+    public function deleteComment($id){
+        return $this->delete($id);
+    }
+
 
 }
 

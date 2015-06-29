@@ -57,10 +57,14 @@ body img{
 .clear{
     clear: both;
 }
+.clear hr{
+    margin-bottom: 20px;
+}
 #create{
     margin-left: 30%;
     margin-top: 40px;
 }
+
 .createarticle h3{
     text-align: center;
     color: #846205;
@@ -174,6 +178,20 @@ hr{
 }
 .changesection{
     margin-left: 35%;
+}
+.changearticlecomment h3{
+    text-align: center;
+    color: #846205;
+}
+.changearticlecomment input[type=submit]{
+    margin-bottom: 15px;
+}
+.changepoll input[type=text]{
+    width: 150%;
+}
+.changepoll h3{
+    text-align: center;
+    color: #846205;
 }
 .createsection{
 
